@@ -14,6 +14,16 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+  @import "../assets/scss/const";
+  @import "../assets/scss/vars";
 
+  .app-container {
+    background-color: $body-bg;
+    height: 100%;
+    @include backgroundImage(url(../assets/imgs/pes2011_stadium_x18_bmp_jpgcopy.png));
+    background-position: center;
+    background-repeat: no-repeat;
+    @include backgroundSize(contain)
+  }
 </style>
