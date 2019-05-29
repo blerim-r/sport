@@ -1,0 +1,263 @@
+// extends
+
+// Mixins
+@mixin flex-display() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin inline-flex() {
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+@mixin inline-block() {
+  display: inline-block;
+  display: -moz-inline-block;
+}
+
+@mixin flex($justify: center, $flow: row) {
+  @include flex-display();
+  flex-flow: $flow;
+  justify-content: $justify;
+}
+
+@mixin box-align($val...) {
+  -webkit-box-align: $val;
+  -moz-box-align: $val;
+  box-align: $val;
+}
+
+@mixin align-items($val...) {
+  -webkit-align-items: $val;
+  -moz-align-items: $val;
+  -ms-align-items: $val;
+  -o-align-items: $val;
+  align-items: $val;
+  -ms-flex-align: $val;
+}
+
+@mixin box-pack($val...) {
+  -webkit-box-pack: $val;
+  -moz-box-pack: $val;
+  -ms-flex-pack: $val;
+  box-pack: $val;
+}
+
+@mixin justify-content($val...) {
+  -webkit-justify-content: $val;
+  -moz-justify-content: $val;
+  -ms-justify-content: $val;
+  -o-justify-content: $val;
+  justify-content: $val;
+}
+
+@mixin flex-prop($val...) {
+  -webkit-flex: $val;
+  -moz-flex: $val;
+  -ms-flex: $val;
+  flex: $val;
+}
+
+@mixin flex-wrap($val) {
+  flex-wrap: $val;
+  -ms-flex-wrap: $val;
+  -webkit-flex-wrap: $val;
+}
+
+@mixin box-flex($val...) {
+  -webkit-box-flex: $val;
+  -moz-box-flex: $val;
+  box-flex: $val;
+}
+
+@mixin transition($val...) {
+  -webkit-transition: $val;
+  -moz-transition: $val;
+  -ms-transition: $val;
+  -o-transition: $val;
+  transition: $val;
+}
+
+@mixin transform($val) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -ms-transform: $val;
+  -o-transform: $val;
+  transform: $val;
+}
+
+@mixin box-shadow($val) {
+  -webkit-box-shadow: $val;
+  box-shadow: $val;
+  -moz-box-shadow: $val;
+}
+
+@mixin box-sizing($val) {
+  -webkit-box-sizing: $val;
+  -moz-box-sizing: $val;
+  box-sizing: $val;
+}
+
+@mixin backgroundSize($val) {
+  background-size: $val;
+  -webkit-background-size: $val;
+  -moz-background-size: $val;
+  -o-background-size: $val;
+}
+
+@mixin backgroundImage($val) {
+  background-image: $val;
+  -moz-background-image: $val;
+  -o-background-image: $val;
+  -webkit-background-image: $val;
+}
+
+@mixin hyphens($val) {
+  -moz-hyphens: $val;
+  -ms-hyphens: $val;
+  -webkit-hyphens: $val;
+  hyphens: $val;
+}
+
+@mixin word-break {
+  -ms-word-break: break-all;
+  word-wrap: break-word;
+  @include hyphens(auto);
+}
+
+@mixin app-container {
+  max-width: 1170px;
+  width: 90%;
+  padding: 0 15px;
+  margin: auto;
+}
+
+@mixin appearance($val) {
+  -webkit-appearance: $val;
+  -moz-appearance: $val;
+  appearance: $val;
+}
+
+@mixin user-select($val) {
+  -webkit-user-select: $val;
+  -moz-user-select: $val;
+  -ms-user-select: $val;
+  user-select: $val;
+}
+
+@mixin border-radius($val) {
+  -webkit-border-radius: $val;
+  -moz-border-radius: $val;
+  border-radius: $val;
+}
+
+@mixin appearance($val) {
+  -webkit-appearance: $val;
+  -moz-appearance: $val;
+  appearance: $val;
+}
+
+@mixin filter($val) {
+  filter: $val;
+  -ms-filter: $val;
+  -webkit-filter: $val;
+}
+
+@mixin calc($key, $val) {
+  #{$key}: -webkit-calc(#{$val});
+  #{$key}: -moz-calc(#{$val});
+  #{$key}: calc(#{$val});
+}
+
+@mixin loading-transition-color($light, $main) {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #{$light}), color-stop(40%, #{$main}), color-stop(80%, #{$light}));
+  background: -webkit-linear-gradient(left, #{$light} 0%, #{$main} 40%, #{$light} 80%);
+  background: linear-gradient(to right, #{$light} 0%, #{$main} 40%, #{$light} 80%);
+  @include backgroundSize(50% 100%);
+}
+
+@mixin width-fit-content {
+  width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+}
+
+//// Functions
+
+// return a px value related with min and max width of the screen, defined by min and max range
+@function auto-size($min-screen, $min-value, $max-screen, $max-value, $unit: px) {
+  @return calc(#{$min-value}#{$unit} + (#{$max-value} - #{$min-value}) * ((100vw - #{$min-screen}#{$unit}) / (#{$max-screen} - #{$min-screen})));
+}
+
+// General mixin to support media screen types
+@mixin media($media, $min: 0, $max: 0, $type: 'screen') {
+  @if $media == xs {
+    @media #{$type} and (max-width: 575px) {
+      @content;
+    }
+  } @else if $media == sm {
+    @media #{$type} and (min-width: 576px) and (max-width: 768px) {
+      @content;
+    }
+  } @else if $media == md {
+    @media #{$type} and (min-width: 769px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media #{$type} and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $media == x-lg {
+    @media #{$type} and (min-width: 1200px) {
+      @content;
+    }
+  } @else if $media == cs {
+    @if $min != 0 and $max != 0 {
+      @media #{$type} and (min-width: $min) and (max-width: $max) {
+        @content;
+      }
+    } @else if $min != 0 {
+      @media #{$type} and (min-width: $min) {
+        @content;
+      }
+    } @else {
+      @media #{$type} and (max-width: $max) {
+        @content;
+      }
+    }
+  } @else if $media == xsm {
+    @media #{$type} and (max-width: 768px) {
+      @content;
+    }
+  }
+}
+
+// Common media queries used by most of the devices
+@mixin commonMedia($media, $type: 'screen') {
+  @if $media == mobile {
+    @media #{$type} and (max-width: 425px) {
+      @content;
+    }
+  } @else if $media == pad {
+    @media #{$type} and (min-width: 426px) and (max-width: 768px) {
+      @content;
+    }
+  } @else if $media == desk {
+    @media #{$type} and (min-width: 769px) and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $media == lg-desk {
+    @media #{$type} and (min-width: 1025px) and (max-width: 1440px) {
+      @content;
+    }
+  } @else if $media == x-lg {
+    @media #{$type} and (min-width: 1441px) {
+      @content;
+    }
+  }
+}

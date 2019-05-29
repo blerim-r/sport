@@ -1,0 +1,80 @@
+@import "vars";
+@import "const";
+
+// Natives elements
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (max-width: 575px) {
+  .hide-xs {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .hide-sm {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .hide-md {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .hide-lg {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hide-xlg {
+    display: none !important;
+  }
+}
+
+html {
+  font-size: auto-size(320, 16, 1440, 21);
+  @include media(cs, 1441px) {
+    font-size: 21px;
+  }
+}
+
+body {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h5 {
+  font-size: 0.85em;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  font-size: 0.95em;
+}
+
+label {
+  font-size: 0.8em;
+}

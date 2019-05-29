@@ -14,6 +14,8 @@
   import TopLinksComponent from "./components/TopLinksComponent";
   import NavLinksComponent from "./components/NavLinksComponent";
   import FooterComponent from "./components/FooterComponent";
+  import "./assets/scss/app.scss";
+
   export default {
     components: {FooterComponent, NavLinksComponent, TopLinksComponent}
   }
