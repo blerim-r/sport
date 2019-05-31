@@ -1,7 +1,6 @@
 <template>
   <div class="app-container">
     <match-container-component />
-    <quick-links-component />
   </div>
 </template>
 
@@ -19,8 +18,10 @@
   @import "../assets/scss/vars";
 
   .app-container {
+    padding: 50px 0;
     background-color: $body-bg;
-    height: 100%;
+    min-height: calc(100vh - 186px);
+    position: relative;
     @include backgroundImage(url(../assets/imgs/pes2011_stadium_x18_bmp_jpgcopy.png));
     background-position: center;
     background-repeat: no-repeat;

@@ -129,6 +129,10 @@
   padding-left: 0;
 }
 
+.pd-left-14 {
+  padding-left: 14px;
+}
+
 .pd-right-0 {
   padding-right: 0;
 }
@@ -137,6 +141,15 @@
   padding-bottom: 2px;
 }
 
+.pd-8 {
+  padding: 8px;
+}
+.pd-top-0 {
+  padding-top: 0;
+}
+.pd-btm-0 {
+  padding-bottom: 0;
+}
 .pd0-v {
   padding: 0 auto;
 }
@@ -145,6 +158,9 @@
   padding: auto 0;
 }
 
+.pd-0-8px {
+  padding: 0 8px;
+}
 .mg0-v {
   margin: 0 auto;
 }
@@ -329,6 +345,14 @@
 }
 .bold-font {
   font-weight: bold;
+}
+
+.font-1em {
+  font-size: 1em;
+}
+
+.font-12px {
+  font-size: 12px;
 }
 
 .flex-align-center {

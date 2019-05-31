@@ -23,6 +23,7 @@
     background-color: #373f46;
     box-shadow: inset -4px -6px 10px rgba(0, 0, 0, 0.5);
     height: 35px;
+    padding: 0 0 0 50px;
     a {
       font-size: 0.7em;
       color: #fff;

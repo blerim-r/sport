@@ -10,6 +10,10 @@
         <div class="single-link flex flex-align-center"><a href="javascript:" class="flex flex-align-center">casino</a> </div>
         <div class="single-link flex flex-align-center"><a href="javascript:" class="flex flex-align-center">live casino</a> </div>
         <div class="single-link flex flex-align-center"><a href="javascript:" class="flex flex-align-center">games</a> </div>
+        <div class="holder-menu-ital">
+          <img src="../assets/imgs/menu-circular-button.png">
+          <img src="../assets/imgs/italy_(3).png">
+        </div>
       </div>
     </div>
     <div class="border"></div>
@@ -28,6 +32,7 @@
   @import "../assets/scss/const";
 
   .nav-container {
+    padding: 0 0 0 50px;
     background-color: $body-bg;
     height: 60px;
     &:hover {
@@ -79,6 +84,20 @@
       text-transform: uppercase;
       text-decoration: none;
       margin: 0;
+    }
+    .holder-menu-ital {
+      background-image: url("../assets/imgs/Layer_1.png");
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 108px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & img:nth-child(1) {
+        padding: 0 10px;
+
+      }
     }
   }
   .border {
