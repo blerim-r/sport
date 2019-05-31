@@ -1,5 +1,16 @@
+// Fonts
+$font-lato: 'Lato';
+$font-rajdhani: 'Rajdhani';
+$font-rajdhani-semibold: 'Rajdhani - Semibold';
+$font-rajdhani-bold: 'Rajdhani - Bold';
+$font-rajdhani-regular: 'Rajdhani - Regular';
+
+
+
 $body-bg: rgba(0, 0, 0, 0.88);
 $nav-links-cl: #b4d8f7;
 $nav-links-cl-active: #ff6000;
-$nav-font-family: 'Rajdhani - Semibold';
-$top-nav-font-family: 'Lato';
+$nav-font-family: $font-rajdhani-semibold;
+$top-nav-font-family: $font-lato;
+
+

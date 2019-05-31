@@ -24,6 +24,6 @@
     @include backgroundImage(url(../assets/imgs/pes2011_stadium_x18_bmp_jpgcopy.png));
     background-position: center;
     background-repeat: no-repeat;
-    @include backgroundSize(contain)
+    @include backgroundSize(contain);
   }
 </style>
