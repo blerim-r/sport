@@ -87,9 +87,12 @@
     methods: {
       toggleMatchBoxes: function () {
         this.toggle = !this.toggle;
-        $('html, body').animate({
-          scrollTop: $('.quicklinks-cntainer').offset().top
-        });
+        if (!this.toggle) {
+          $('html, body').animate({
+            scrollTop: $('.quicklinks-cntainer').offset().top
+          });
+
+        }
       }
 
     }
