@@ -12,8 +12,10 @@
       </div>
       <div class="poker">
         <img class="pd-8 pd-btm-0" src="../assets/imgs/Color_Fill_2_copy_4.png">
-        <img class="pd-8 pd-btm-0" src="../assets/imgs/Color_Fill_2_copy_5.png">
-        <div class="poker-descripsion">VIRTUAL GAMES <span>GIOCA ORA</span></div>
+        <div class="pd-8 pd-btm-0 holder-descripsion">
+          <img class="pd-8 pd-btm-0 w-100" src="../assets/imgs/Color_Fill_2_copy_5.png">
+          <div class="poker-descripsion">VIRTUAL GAMES <span>GIOCA ORA</span></div>
+        </div>
         <img class="pd-8" src="../assets/imgs/Color_Fill_2_copy_7.png">
       </div>
   </div>
@@ -25,11 +27,21 @@
   }
 </script>
 
+
+
 <style scoped lang="scss">
   @import "../assets/scss/const";
   @import "../assets/scss/class";
 
   .match-container {
+    @include media(cs, 0, 1200px) {
+      display: flex;
+      flex-flow: column;
+      width: fit-content;
+      .football , .poker {
+        margin: auto;
+      }
+    }
     width: 1064px;
     box-shadow: 0 0 13px #000000;
     border: 3px solid #000000;
@@ -92,36 +104,51 @@
       background-color: rgba(44 ,44 , 44 , 0.5);
       display: flex;
       flex-flow: column;
-      img {
-        /*padding: 8px;*/
-      }
-      .poker-descripsion {
-        display: flex;
-        height: 43px;
-        align-items: center;
-        background-color: #282828;
-        margin: 0 8px;
-        font-size: 0.8em;
-        justify-content: space-between;
-        padding-left: 15px;
-        color: #ffffff;
-        font-family: $font-rajdhani;
-        font-weight: 500;
-        line-height: 16px;
-        text-transform: uppercase;
-        span {
-          background-image: url("../assets/imgs/Layer_1.png");
-          /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHEAAAArCAYAAABPa2dBAAAABGdBT…sAQiNAWFaeb8s8jOvNCtwA8RsB+sD8fkdSWUl3JOTDNNV/r72N5ZbLfIsAAAAASUVORK5CYII=);*/
-          background-repeat: no-repeat;
-          height: 100%;
+      .holder-descripsion {
+        width: 100%;
+        padding: 0;
+        position: relative;
+        .poker-descripsion {
           display: flex;
+          width: 329px;
+          height: 43px;
           align-items: center;
-          justify-content: center;
-          background-size: cover;
-          width: 130px;
-          padding-left: 10px;
-          color: #ff6000;
+          background-color: #282828;
+          margin: 0 8px;
+          font-size: 0.8em;
+          justify-content: space-between;
+          padding-left: 15px;
+          color: #ffffff;
+          font-family: $font-rajdhani;
+          font-weight: 500;
+          line-height: 16px;
+          text-transform: uppercase;
+          position: absolute;
+          bottom: 0;
+          z-index: 999;
+          span {
+            background-image: url("../assets/imgs/Layer_1.png");
+            background-repeat: no-repeat;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            width: 130px;
+            padding-left: 10px;
+            color: #ff6000;
+          }
         }
+      }
+      @include media(cs, 0 , 1200px) {
+        flex-flow: wrap;
+        width: 680px;
+        & * {
+          width: 340px!important;
+        }
+        /*.poker-descripsion {*/
+        /*width: 325px;*/
+        /*}*/
       }
     }
   }

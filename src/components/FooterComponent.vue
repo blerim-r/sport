@@ -22,6 +22,13 @@
   @import "../assets/scss/class";
 
  .footer-container {
+   @include media(cs, 0 , 1200px) {
+     justify-content: center;
+     align-items: flex-end;
+     img {
+       bottom: 10px;
+     }
+   }
    position: relative;
    height: 52px;
    display: flex;

@@ -71,7 +71,7 @@
     }
 
     .single-link {
-      margin-left: 25px;
+      /*margin-left: 25px;*/
       height: 100%;
       padding: 0 10px;
     }
