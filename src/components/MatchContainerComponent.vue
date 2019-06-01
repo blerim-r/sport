@@ -38,8 +38,8 @@
       display: flex;
       flex-flow: column;
       width: fit-content;
-      .football , .poker {
-        margin: auto;
+      .poker {
+        padding: 0 20px;
       }
     }
     width: 1064px;
@@ -125,7 +125,8 @@
           z-index: 999;
           left: 0;
           right: 0;
-          padding: 0 8px 0 15px;
+          padding: 0 0 0 15px;
+          margin: 0 7px;
           span {
             background-image: url("../assets/imgs/Layer_1.png");
             background-repeat: no-repeat;
@@ -142,7 +143,7 @@
       }
       @include media(cs, 0 , 1200px) {
         flex-flow: wrap;
-        width: 680px;
+        width: 720px;
         & > * {
           width: 340px!important;
         }

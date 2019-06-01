@@ -30,9 +30,10 @@
 
 <style scoped lang="scss">
   @import "../assets/scss/const";
+  @import "../assets/scss/vars";
 
   .nav-container {
-    padding: 0 0 0 50px;
+    padding: 0 0 1px 50px;
     background-color: $body-bg;
     height: 60px;
     &:hover {
@@ -71,9 +72,11 @@
     }
 
     .single-link {
-      /*margin-left: 25px;*/
       height: 100%;
       padding: 0 10px;
+      @include media (cs, 0, 1200px) {
+        padding: 0 7px;
+      }
     }
     a {
       height: 100%;
