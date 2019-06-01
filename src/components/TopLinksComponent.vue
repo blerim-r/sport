@@ -32,7 +32,10 @@
       text-transform: uppercase;
       &:not(:first-child) {
         margin-left: 25px;
-    }
+      }
+      &:hover {
+        color: $nav-links-cl-active;
+      }
     }
   }
 </style>

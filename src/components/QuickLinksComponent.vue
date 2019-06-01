@@ -4,7 +4,7 @@
       <img class="arrow" src="../assets/imgs/arrow-down-sign-to-navigate.png">
     </div>
     <div class="quicklinks row w-100 mg0" :class="{collapsed: toggle}">
-      <div class="box col-md-3 desc-container pd0">
+      <div class="box col-md-3 col-sm-6 desc-container pd0">
         <div class="head-box">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="186" height="25"
                viewBox="0 0 186 25">
@@ -23,36 +23,7 @@
           <img src="../assets/imgs/Layer_2.png">
         </div>
       </div>
-      <div class="box col-md-2 links-container auto left-shadow pd0">
-        <div class="head-box">ABOUT</div>
-        <div class="box-content">
-          <p class="link-container"><a href="javascript:">General Terms & Conditions </a></p>
-          <p class="link-container"><a href="javascript:">Gioco Responsabile </a></p>
-          <p class="link-container"><a href="javascript:">Privacy Policy </a></p>
-          <p class="link-container"><a href="javascript:">Verifica dell'età </a></p>
-          <p class="link-container"><a href="javascript:">Protezione Giocatori </a></p>
-        </div>
-      </div>
-      <div class="box col-md-2 links-container about full-shadow pd0">
-        <div class="head-box">AIUTO</div>
-        <div class="box-content">
-          <p class="link-container"><a href="javascript:">Sports Betting Termini & Condizioni</a></p>
-          <p class="link-container"><a href="javascript:">Calcio Termini & Condizioni</a></p>
-          <p class="link-container"><a href="javascript:">Poker Termini & Condizioni</a></p>
-          <p class="link-container"><a href="javascript:">Statistiche</a></p>
-          <p class="link-container"><a href="javascript:">Contattaci</a></p>
-        </div>
-      </div>
-      <div class="box col-md-2 links-container product right-shadow pd0">
-        <div class="head-box">PRODOTTI</div>
-        <div class="box-content">
-          <p class="link-container"><a href="javascript:">Sport</a></p>
-          <p class="link-container"><a href="javascript:">Casinò</a></p>
-          <p class="link-container"><a href="javascript:">Poker</a></p>
-          <p class="link-container"><a href="javascript:">Giochi Virtual</a></p>
-        </div>
-      </div>
-      <div class="box col-md-3 desc-container pd0">
+      <div class="box col-md-3 col-sm-6 desc-container pd0">
         <div class="head-box flex flex-between flex-align-center">
           <p class="cl-white font-12px inline-logo-desc">
             Il gioco è vietato ai minori di 18 anni
@@ -75,6 +46,66 @@
               scrambled it to make a type specimen book.</p>
             <button class="btn-assistent">ASSISTENZA ONLINE</button>
           </div>
+        </div>
+      </div>
+      <div class="box col-md-2 col-sm-4 links-container auto left-shadow pd0">
+        <div class="head-box">ABOUT</div>
+        <div class="box-content">
+          <p class="link-container"><a href="javascript:">General Terms & Conditions </a></p>
+          <p class="link-container"><a href="javascript:">Gioco Responsabile </a></p>
+          <p class="link-container"><a href="javascript:">Privacy Policy </a></p>
+          <p class="link-container"><a href="javascript:">Verifica dell'età </a></p>
+          <p class="link-container"><a href="javascript:">Protezione Giocatori </a></p>
+        </div>
+      </div>
+      <div class="box col-md-2 col-sm-4 links-container about full-shadow pd0">
+        <div class="head-box">AIUTO</div>
+        <div class="box-content">
+          <p class="link-container"><a href="javascript:">Sports Betting Termini & Condizioni</a></p>
+          <p class="link-container"><a href="javascript:">Calcio Termini & Condizioni</a></p>
+          <p class="link-container"><a href="javascript:">Poker Termini & Condizioni</a></p>
+          <p class="link-container"><a href="javascript:">Statistiche</a></p>
+          <p class="link-container"><a href="javascript:">Contattaci</a></p>
+        </div>
+      </div>
+      <div class="box col-md-2 col-sm-4 links-container product right-shadow pd0">
+        <div class="head-box">PRODOTTI</div>
+        <div class="box-content">
+          <p class="link-container"><a href="javascript:">Sport</a></p>
+          <p class="link-container"><a href="javascript:">Casinò</a></p>
+          <p class="link-container"><a href="javascript:">Poker</a></p>
+          <p class="link-container"><a href="javascript:">Giochi Virtual</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="box col-md-2 col-sm-4 links-container auto left-shadow pd0">
+        <div class="head-box">ABOUT</div>
+        <div class="box-content">
+          <p class="link-container"><a href="javascript:">General Terms & Conditions </a></p>
+          <p class="link-container"><a href="javascript:">Gioco Responsabile </a></p>
+          <p class="link-container"><a href="javascript:">Privacy Policy </a></p>
+          <p class="link-container"><a href="javascript:">Verifica dell'età </a></p>
+          <p class="link-container"><a href="javascript:">Protezione Giocatori </a></p>
+        </div>
+      </div>
+      <div class="box col-md-2 col-sm-4 links-container about full-shadow pd0">
+        <div class="head-box">AIUTO</div>
+        <div class="box-content">
+          <p class="link-container"><a href="javascript:">Sports Betting Termini & Condizioni</a></p>
+          <p class="link-container"><a href="javascript:">Calcio Termini & Condizioni</a></p>
+          <p class="link-container"><a href="javascript:">Poker Termini & Condizioni</a></p>
+          <p class="link-container"><a href="javascript:">Statistiche</a></p>
+          <p class="link-container"><a href="javascript:">Contattaci</a></p>
+        </div>
+      </div>
+      <div class="box col-md-2 col-sm-4 links-container product right-shadow pd0">
+        <div class="head-box">PRODOTTI</div>
+        <div class="box-content">
+          <p class="link-container"><a href="javascript:">Sport</a></p>
+          <p class="link-container"><a href="javascript:">Casinò</a></p>
+          <p class="link-container"><a href="javascript:">Poker</a></p>
+          <p class="link-container"><a href="javascript:">Giochi Virtual</a></p>
         </div>
       </div>
     </div>
@@ -111,7 +142,19 @@
 
       }
     }
+    @include media(cs, 0 , 1200px){
+      .row {
+        display: block;
+      }
+      .quicklinks .links-container {
+        display: none;
+      }
+    }
+
     background-color: rgba(0, 0, 0, 0.88);
+    .row {
+      display: none;
+    }
     .box-content .inline-logo-desc {
       display: none;
     }
@@ -163,7 +206,7 @@
           padding: 0 15px;
           font-weight: 500;
           font-family: $font-rajdhani;
-          color: #f26222;
+          color: $nav-links-cl-active;
           font-size: 0.75em;
           height: 50px;
           float: right;
@@ -172,6 +215,9 @@
           padding: 15px 15px 0;
           &, a {
             color: #bbb;
+          }
+          a:hover {
+            color: $nav-links-cl-active;
           }
         }
       }

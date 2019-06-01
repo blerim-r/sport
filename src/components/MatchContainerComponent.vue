@@ -110,14 +110,11 @@
         position: relative;
         .poker-descripsion {
           display: flex;
-          width: 329px;
           height: 43px;
           align-items: center;
           background-color: #282828;
-          margin: 0 8px;
           font-size: 0.8em;
           justify-content: space-between;
-          padding-left: 15px;
           color: #ffffff;
           font-family: $font-rajdhani;
           font-weight: 500;
@@ -126,6 +123,9 @@
           position: absolute;
           bottom: 0;
           z-index: 999;
+          left: 0;
+          right: 0;
+          padding: 0 8px 0 15px;
           span {
             background-image: url("../assets/imgs/Layer_1.png");
             background-repeat: no-repeat;
@@ -143,12 +143,9 @@
       @include media(cs, 0 , 1200px) {
         flex-flow: wrap;
         width: 680px;
-        & * {
+        & > * {
           width: 340px!important;
         }
-        /*.poker-descripsion {*/
-        /*width: 325px;*/
-        /*}*/
       }
     }
   }
