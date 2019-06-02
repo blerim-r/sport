@@ -64,7 +64,7 @@
         width: 405px;
         margin: 17px 0 35px 25px;
         .title-register {
-          color: #ff6000;
+          color: $orange;
           font-family: $font-rajdhani;
           font-size: 21px;
           font-weight: 400;
@@ -137,7 +137,7 @@
             background-size: cover;
             width: 130px;
             padding-left: 10px;
-            color: #ff6000;
+            color: $orange;
           }
         }
       }

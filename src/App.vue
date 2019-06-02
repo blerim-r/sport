@@ -15,6 +15,7 @@
   import NavLinksComponent from "./components/NavLinksComponent";
   import FooterComponent from "./components/FooterComponent";
   import "./assets/scss/app.scss";
+  import 'bootstrap/dist/css/bootstrap.min.css';
 
   export default {
     components: {FooterComponent, NavLinksComponent, TopLinksComponent}

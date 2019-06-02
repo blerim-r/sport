@@ -110,6 +110,8 @@
 </template>
 
 <script>
+  import $ from 'jquery';
+
   export default {
     name: "QuickLinksComponent",
     data: () => ({
@@ -251,7 +253,7 @@
           font-weight: 500;
           font-family: $font-rajdhani;
           color: $nav-links-cl-active;
-          font-size: 0.75em;
+          font-size: 1em;
           height: 50px;
           float: right;
         }
@@ -304,6 +306,8 @@
               background-color: #f26222;
               border: none;
               margin-top: 23px;
+              color: #fff;
+              font-size: 1.2em;
             }
           }
 
@@ -318,7 +322,7 @@
           .link-container {
             margin: 0;
             padding: 0;
-            line-height: 16px;
+            line-height: 18px;
 
             a {
               font-family: $font-rajdhani;

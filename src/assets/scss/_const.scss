@@ -9,7 +9,8 @@ $font-rajdhani-regular: 'Rajdhani - Regular';
 
 $body-bg: rgba(0, 0, 0, 0.88);
 $nav-links-cl: #b4d8f7;
-$nav-links-cl-active: #ff6000;
+$orange: #ff6000;
+$nav-links-cl-active: $orange;
 $nav-font-family: $font-rajdhani-semibold;
 $top-nav-font-family: $font-lato;
 
