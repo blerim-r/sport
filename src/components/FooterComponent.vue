@@ -22,13 +22,6 @@
   @import "../assets/scss/class";
 
  .footer-container {
-   @include media(cs, 0 , 1200px) {
-     justify-content: center;
-     align-items: flex-end;
-     img {
-       bottom: 10px;
-     }
-   }
    position: relative;
    height: 52px;
    display: flex;
@@ -44,13 +37,23 @@
      bottom: 0;
    }
    span {
-     height: 12px;
      color: #bbbbbb;
      font-family: $font-rajdhani;
      font-size: 14px;
      font-weight: 400;
-     line-height: 14px;
      padding-right: 50px;
+   }
+   @include media(cs, 0 , 1200px) {
+     flex-flow: column;
+     align-items: center;
+     justify-content: center;
+     img {
+       position: relative;
+       bottom: 10px;
+     }
+     span {
+       padding: 0;
+     }
    }
 }
 

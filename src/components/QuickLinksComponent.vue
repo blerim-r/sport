@@ -136,7 +136,7 @@
 
   .quicklinks-container {
     @include media(cs, 0 , 1800px) {
-      .desc-container-desktop {
+      .desc-container-desktop, .desc-container-clone {
         .head-box {
           display: flex;
           justify-content: flex-end;
